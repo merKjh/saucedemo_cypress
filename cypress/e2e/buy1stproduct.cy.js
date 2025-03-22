@@ -21,38 +21,38 @@ describe('Buy 1st Product - Backpack', () => {
         LoginPage.clickLoginButton();
     })
 
-    // it('Verify Success Login with Valid Credentials', () => {
-    //     productPages.verifyBurgerMenuIsDisplayed();
-    // });
+    it('Verify Success Login with Valid Credentials', () => {
+        productPages.verifyBurgerMenuIsDisplayed();
+    });
 
-    // it('Buy the Sauce Lab Backpack ', () => {
-    //     productPages.clickSpesificProduct_backpack();
-    //     detailProductPages.verifyTheDetailPage_backpack();
-    //     detailProductPages.clickOrderinDetailPage();
-    // });
+    it('Buy the Sauce Lab Backpack ', () => {
+        productPages.clickSpesificProduct_backpack();
+        detailProductPages.verifyTheDetailPage_backpack();
+        detailProductPages.clickOrderinDetailPage();
+    });
 
-    // it('Verify the product in Your Cart Page ', () => {
-    //     productPages.clickSpesificProduct_backpack();
-    //     detailProductPages.verifyTheDetailPage_backpack();
-    //     detailProductPages.clickOrderinDetailPage();
-    //     detailProductPages.clickCartButton();
-    //     yourCartPage.verifyCartPage_backpack();
-    //     yourCartPage.verifyCartPage_backpackPrice();    
-    // });
+    it('Verify the product in Your Cart Page ', () => {
+        productPages.clickSpesificProduct_backpack();
+        detailProductPages.verifyTheDetailPage_backpack();
+        detailProductPages.clickOrderinDetailPage();
+        detailProductPages.clickCartButton();
+        yourCartPage.verifyCartPage_backpack();
+        yourCartPage.verifyCartPage_backpackPrice();    
+    });
 
-    // it('Fill out the Information Page ', () => {
-    //     productPages.clickSpesificProduct_backpack();
-    //     detailProductPages.verifyTheDetailPage_backpack();
-    //     detailProductPages.clickOrderinDetailPage();
-    //     detailProductPages.clickCartButton();
-    //     yourCartPage.verifyCartPage_backpack();
-    //     yourCartPage.verifyCartPage_backpackPrice();   
-    //     yourCartPage.clickCheckOutButton();
-    //     informationPage.fillOutTheFirstNameBuyer();   
-    //     informationPage.fillOutTheLastNameBuyer();
-    //     informationPage.fillOutPostalCodeBuyer();
-    //     informationPage.clickContinuetbtn();
-    // });
+    it('Fill out the Information Page ', () => {
+        productPages.clickSpesificProduct_backpack();
+        detailProductPages.verifyTheDetailPage_backpack();
+        detailProductPages.clickOrderinDetailPage();
+        detailProductPages.clickCartButton();
+        yourCartPage.verifyCartPage_backpack();
+        yourCartPage.verifyCartPage_backpackPrice();   
+        yourCartPage.clickCheckOutButton();
+        informationPage.fillOutTheFirstNameBuyer();   
+        informationPage.fillOutTheLastNameBuyer();
+        informationPage.fillOutPostalCodeBuyer();
+        informationPage.clickContinuetbtn();
+    });
 
     it('Verify the Product in the Overview Page ', () => {
         productPages.clickSpesificProduct_backpack();
