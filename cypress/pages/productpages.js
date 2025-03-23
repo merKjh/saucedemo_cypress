@@ -15,6 +15,10 @@ class productPages {
         cy.get(this.burgerMenu).should('be.visible');
     }
 
+    clickBurgerMenu () {
+        cy.get(this.burgerMenu).click();
+    }
+
     verifytitleInventory () {
         cy.xpath(this.inventoryProduct).should('be.visible');
     }
