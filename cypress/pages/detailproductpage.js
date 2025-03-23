@@ -10,6 +10,10 @@ class detailProductPages {
         cy.get(this.detailProductName).should('have.text', 'Sauce Labs Backpack');
     }
 
+    verifyTheDetailPage_fleeceJacket () {
+        cy.get(this.detailProductName).should('have.text', 'Sauce Labs Fleece Jacket');
+    }
+
     clickOrderinDetailPage () {
         cy.get(this.addtoCartbtn).click();
     }

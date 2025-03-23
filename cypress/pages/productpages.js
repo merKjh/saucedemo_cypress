@@ -47,6 +47,18 @@ class productPages {
         });
     }
 
+    clickSpesificProduct_fleeceJacket () {
+        const targetProduct = "Sauce Labs Fleece Jacket";
+        cy.xpath(this.inventoryProduct).each(($el) => {
+            cy.wrap($el).invoke('text').then((text) => {
+                if (text.trim() === targetProduct) {
+                    cy.log(`Found product: ${text}`);
+                    cy.wrap($el).click();
+                }
+            });
+        });
+    }
+
 }
 
 export default new productPages();

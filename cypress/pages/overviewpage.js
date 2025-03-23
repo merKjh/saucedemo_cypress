@@ -12,8 +12,16 @@ class overviewPage {
         cy.get(this.detailProductName).should('have.text', 'Sauce Labs Backpack');
     }
 
+    verifyOverviewProduct_fleeceJacket () {
+        cy.get(this.detailProductName).should('have.text', 'Sauce Labs Fleece Jacket');
+    }
+
     verifyOverviewProduct_backpackPrice () {
         cy.get(this.itemPrice).should('have.text', '$29.99');
+    }
+
+    verifyOverviewProduct_fleeceJacketPrice () {
+        cy.get(this.itemPrice).should('have.text', '$49.99');
     }
 
     clickFinishButton () {
